@@ -1,0 +1,45 @@
+<resources>
+  <string name="app_name">RxJava2-Android-Samples</string>
+  <string name="doSomeWork">doSomeWork</string>
+  <string name="operators">Operators</string>
+  <string name="networking">Networking</string>
+  <string name="pagination">Pagination</string>
+  <string name="click_me">Click Me</string>
+  <string name="rx_bus">RxBus</string>
+
+  <string-array name="operators">
+    <item name="simple">Simple</item>
+    <item name="map">Map</item>
+    <item name="zip">Zip</item>
+    <item name="disposable">Disposable</item>
+    <item name="take">Take</item>
+    <item name="timer">Timer</item>
+    <item name="interval">Interval</item>
+    <item name="SingleObserver">SingleObserver</item>
+    <item name="CompletableObserver">CompletableObserver</item>
+    <item name="Flowable">Flowable</item>
+    <item name="reduce">Reduce</item>
+    <item name="buffer">Buffer</item>
+    <item name="filter">Filter</item>
+    <item name="skip">Skip</item>
+    <item name="scan">Scan</item>
+    <item name="replay">Replay</item>
+    <item name="concat">Concat</item>
+    <item name="merge">Merge</item>
+    <item name="defer">Defer</item>
+    <item name="distinct">Distinct</item>
+    <item name="last">Last</item>
+    <item name="replay_subject">ReplaySubject</item>
+    <item name="publish_subject">PublishSubject</item>
+    <item name="behavior_subject">BehaviorSubject</item>
+    <item name="async_subject">AsyncSubject</item>
+    <item name="throttle_last">ThrottleLast</item>
+    <item name="debounce">Debounce</item>
+    <item name="window">Window</item>
+    <item name="delay">delay</item>
+    <item name="throttle_first">ThrottleFirst</item>
+    <item name="flatMapAndFilter">flatMapAndFilter</item>
+    <item name="flatMap">flatMap</item>
+    <item name="flatMapWithZip">flatMapWithZip</item>
+  </string-array>
+</resources>

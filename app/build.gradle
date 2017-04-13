@@ -1,0 +1,59 @@
+apply plugin: 'com.android.application'
+
+apply plugin: 'com.jakewharton.hugo'
+
+android {
+  compileSdkVersion 25
+  buildToolsVersion "25.0.2"
+  defaultConfig {
+    applicationId "org.desert.learning.rxlearning"
+    minSdkVersion 15
+    targetSdkVersion 25
+    versionCode 1
+    versionName "$VERSION_NAME"
+    testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+  }
+  buildTypes {
+    release {
+      minifyEnabled false
+      proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+    }
+  }
+
+  compileOptions {
+    sourceCompatibility JavaVersion.VERSION_1_8
+    targetCompatibility JavaVersion.VERSION_1_8
+  }
+}
+
+dependencies {
+  compile fileTree(dir: 'libs', include: ['*.jar'])
+  androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+    exclude group: 'com.android.support', module: 'support-annotations'
+  })
+  compile('com.jakewharton.rxbinding2:rxbinding-appcompat-v7:latest.release') {
+    exclude module: "appcompat-v7"
+  }
+  compile('com.jakewharton.rxbinding2:rxbinding-recyclerview-v7:latest.release') {
+    exclude module: "recyclerview-v7"
+  }
+  compile 'com.squareup.retrofit2:retrofit:latest.release'
+  compile 'com.squareup.retrofit2:converter-gson:latest.release'
+  compile 'io.reactivex.rxjava2:rxjava:latest.release'
+  compile 'io.reactivex.rxjava2:rxandroid:latest.release'
+  compile 'com.jakewharton.rxbinding2:rxbinding:latest.release'
+  compile 'com.jakewharton.rxbinding2:rxbinding-support-v4:latest.release'
+  compile 'com.squareup.retrofit2:adapter-rxjava2:latest.release'
+  compile 'com.android.support:appcompat-v7:25.3.0'
+  compile 'com.android.support.constraint:constraint-layout:1.0.2'
+  compile 'com.iqiyi.ishow:qixiu-common:0.0.2'
+  compile 'com.android.support:design:25.3.1'
+  compile 'com.android.support:support-v4:25.3.1'
+  compile 'com.android.support:recyclerview-v7:25.3.1'
+  compile 'com.jakewharton:butterknife:latest.release'
+  testCompile 'junit:junit:4.12'
+  testCompile 'com.squareup.leakcanary:leakcanary-android-no-op:latest.release'
+  annotationProcessor 'com.jakewharton:butterknife-compiler:latest.release'
+  debugCompile 'com.squareup.leakcanary:leakcanary-android:latest.release'
+  releaseCompile 'com.squareup.leakcanary:leakcanary-android-no-op:latest.release'
+}
